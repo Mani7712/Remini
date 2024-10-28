@@ -18,10 +18,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = {{TOKEN_NAME}};
-    _symbol = {{TOKEN_SYMBOL}};
-    _decimals = {{DECIMALS}};
-    _totalSupply = {{TOTAL_SUPPLY}};
+    _name = REMINI;
+    _symbol = RMN;
+    _decimals = 9;
+    _totalSupply = 1000000000;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
